@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developing a Slider in Pure JavaScript</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="flex flex-col items-center pt-10">
+    <h1 class="text-4xl text-green-700 font-bold">7 Wonders of the World</h1>
+  <div class="switch pt-5 pb-3">
+      <input id="autoplay" name="autoplay" type="checkbox" class="w-4 h-4">
+      <label for="autoplay" class="text-2xl text-gray-600">Autoplay</label>
+  </div>
+  </header>
+  <main class="flex justify-center items-center gap-x-5 w-full pt-3">
+    <button id="btnPrev"> 
+      <img src="img/icon-arrow-left.svg" alt="Icon-arrow-left" class="w-10 h-10">
+    </button>
+  <section class="slider flex overflow-hidden transition-all duration-3000 ease-in-out w-2/4 h-auto">
+    <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Great Wall of China</h2>
+      <img src="img/Great-Wall-of-China.jpg" alt="Great Wall of China" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Chichén Itzá</h2>
+      <img src="img/Chichen-Itza.jpg" alt="Chichén Itzá" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Petra</h2>
+      <img src="img/Khaznah-Petra-Jordan.jpg" alt="The Khaznah (“Treasury”) at Petra, Jordan" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Machu Picchu</h2>
+      <img src="img/Machu-Picchu.jpg" alt="Machu Picchu, Peru" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Colosseum</h2>
+      <img src="img/Colosseum-Rome-Italy.jpg" alt="Colosseum, Rome" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Taj Mahal</h2>
+      <img src="img/Taj-Mahal-Agra-India.jpg" alt="Taj Mahal, Agra, India" class="w-full h-full object-cover">
+    </div>
+     <div class="slide flex-shrink-0 w-full h-full">
+        <h2 class="content text-center py-6 text-3xl font-bold">Christ the Redeemer</h2>
+      <img src="img/statue-Christ-the-Redeemer-Rio-de-Janeiro.jpg" alt="Christ the Redeemer statue, Rio de Janeiro" class="w-full h-full object-cover">
+    </div>
+  </section>
+  <button id="btnNext">
+    <img src="img/icon-arrow-right.svg" alt="Icon-arrow-right" class="w-10 h-10">
+  </button>
+  </main>
+  <footer class="flex gap-x-16 justify-center pt-3 pb-10">
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+    <div class="button w-6 h-6 rounded-full border border-[#242424] cursor-pointer hover:scale-110 transition-transform duration-200"></div>
+  </footer>
+</body>
+</html>
